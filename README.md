@@ -34,8 +34,8 @@ This is an **individual** project.
 Project value | 90 points
 --- | ---
 Project start | 16 Oct 2019
-Project due | 28 Oct 2019 at 1:30pm (Mon)
-Drop dead date | 29 Oct 2019 at 1:30pm (Tue)
+Project due | 30 Oct 2019 at 1:30pm (Mon)
+Drop dead date | 31 Oct 2019 at 1:30pm (Tue)
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
