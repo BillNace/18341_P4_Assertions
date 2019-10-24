@@ -290,7 +290,8 @@ end
 $finish; 
 ```
 
-Each phase inserts a different fault (or faults) into the calculator. 
+During each phase, a different calculator model is used, with the potential
+for a different fault (or faults). 
 Task **runTestbench** is called with the phase number as an argument which
 you could use in $display commands, etc.  You really shouldn't use this
 phase number for much else.  You must not have a bunch of tests that are
