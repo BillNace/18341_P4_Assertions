@@ -1,6 +1,6 @@
 Assertions Project
 
-18-341: Fall Semester of 2019
+18-341: Fall Semester of 2020
 
 ## Objective and Overview
 
@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 16 Oct 2019
-Project due | 30 Oct 2019 at 1:30pm (Wed)
-Drop dead date | 31 Oct 2019 at 1:30pm (Thur)
+Project start | 21 Oct 2020
+Project due | 2 Nov 2020 at 1:30pm (Mon)
+Drop dead date | 3 Nov 2020 at 1:30pm (Tue)
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
