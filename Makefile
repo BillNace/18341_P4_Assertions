@@ -17,6 +17,10 @@ TARGET=simv
 #
 # ========================================================
 
+# Set the number of threads to use for parallel compilation (2 * cores)
+CORES = $(shell getconf _NPROCESSORS_ONLN)
+THREADS = $(shell echo $$((2 * $(CORES))))
+
 VCSFLAGS= -full64 -sverilog -debug_all +warn=all -j$(THREADS) \
 					-timescale=1ns/1ps +v2k
 VCSFLAGS_GUI= -full64 -sverilog -debug_all +warn=all -j$(THREADS) \
