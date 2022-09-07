@@ -1,6 +1,6 @@
 Assertions Project
 
-18-341: Fall Semester of 2021
+18-341: Fall Semester of 2022
 
 ## Objective and Overview
 
@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 13 Oct 2021
-Project due | 25 Oct 2021 at 1:30pm (Mon)
-Drop dead date | 26 Oct 2021 at 1:30pm (Tue)
+Project start | 10 Oct 2022
+Project due | 31 Oct 2022 at 1:30pm (Mon)
+Drop dead date | 1 Nov 2022 at 1:30pm (Tue)
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
