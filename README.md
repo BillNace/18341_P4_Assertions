@@ -1,6 +1,6 @@
 Assertions Project
 
-18-341: Fall Semester of 2023
+18-341: Spring Semester of 2024
 
 ## Objective and Overview
 
@@ -12,7 +12,7 @@ come!
 One day in a steam tunnel inside Hamerschlag Hall, some guy is trying to sell
 you IP for a calculator, written in SystemVerilog.  Worse, it’s encrypted
 because he doesn’t want to give away how it works.  Knowing there’s no free
-lunch, only free HKN snack nights, you are skeptical.  Your goal is to write
+lunch, only free pizza on ECE day, you are skeptical.  Your goal is to write
 testbench code, with properties and concurrent assertions, to check if the
 design is correct.
 
@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 10 Oct 2023
-Project due | 30 Oct 2023 at 12:30pm (Mon)
-Drop dead date | 31 Oct 2023 at 12:30pm (Tue)
+Project start | 11 March 2024
+Project due | 19 March 2024 at 3:30pm
+Drop dead date | 20 March 2024 at 3:30pm
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
