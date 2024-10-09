@@ -1,6 +1,6 @@
 Assertions Project
 
-18-341: Spring Semester of 2024
+18-341: Fall Semester of 2024
 
 ## Objective and Overview
 
@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 11 March 2024
-Project due | 19 March 2024 at 3:30pm
-Drop dead date | 20 March 2024 at 3:30pm
+Project start | 9 October 2024
+Project due | 28 October 2024 at 3:30pm
+Drop dead date | 29 October 2024 at 3:30pm
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
