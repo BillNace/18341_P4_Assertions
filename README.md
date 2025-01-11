@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 24 February 2025
-Project due | 19 March 2025 at 3:30pm
-Drop dead date | 20 March 2025 at 3:30pm
+Project start | 27 February 2025
+Project due | 20 March 2025 at 3:30pm
+Drop dead date | 21 March 2025 at 3:30pm
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
