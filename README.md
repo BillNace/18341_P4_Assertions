@@ -377,6 +377,33 @@ make broken
 make golden
 ./simv
 ```
+## NO GOLDEN MODELS + some tips
+
+Most of this section was written by a TA in a previous semester (thanks, Nicole!).
+I suspect it will be useful for you.
+
+**Please do NOT write a golden model for p4.**
+
+What does this mean?
+- do not write a golden calculator
+- do not write a golden stack (the calculator is basically just a stack)
+- do not keep track of what/where data should be in the stack using local vars (this is basically just a golden stack)
+
+What you CAN do:
+- write specific test vectors to force errors, then check that the appropriate error signals are active (you can do this using immediate or concurrent assertions)
+- write specific test vectors and check that the result is correct, and that the appropriate output signals were asserted at the correct time.
+- performing an arithmetic op, then checking that the stacktop is correct based on what the arithmetic op was and what arguments you supplied for that op.
+- pushing a payload onto the stack then checking that the stacktop holds that payload.
+- use a local var to keep track of the stack size
+
+In general, the goal is to write a suite of test vectors designed to induce every type of error scenario you can possibly think of (timing, correctness, etc.), and then write assertions to check the behavior of the broken calc against what you know is the correct behavior since you're the one writing the test vectors. 
+
+Not every test needs to check for every type of error! You can write targeted test vectors designed to check for and catch specific errors, with the hope that you write a diverse enough set of test vectors that when run all together, will be able to catch all the possible faults/bugs you listed in your fault model. In fact, this is probably a more beneficial approach to use since it'll be easier for you to pinpoint what exact errors are happening and where. What do I mean by "targeted" test vectors? Probably don't randomize everything (be thoughtful about what values might trigger/induce errors).
+
+The goal of this project is to get some practice with assertions, primarily 
+concurrent assertions.  You might find yourself writing some very small number of
+immediate assertions for particular situations.  But, overall, you should mostly be
+writing the concurrent type of assertions.
 
 ## For Credit
 
