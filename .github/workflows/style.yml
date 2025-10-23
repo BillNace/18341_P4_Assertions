@@ -19,6 +19,6 @@ jobs:
       config_ref: main
       config_path: config/.341-slang-tidy
 
-      base_branch: main
+      base_branch: ${{ github.event.repository.default_branch }}
       run_full_scan: "false"
       fail_on_no_files: "false"
