@@ -1,6 +1,6 @@
 Assertions Project
 
-18-341: Fall Semester of 2025
+18-341: Spring Semester of 2026
 
 ## Objective and Overview
 
@@ -33,9 +33,9 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 8 October 2025
-Project due | 27 October 2025 at 3:30pm
-Drop dead date | 28 October 2025 at 3:30pm
+Project start | 26 February 2026
+Project due | 17 March 2026 at 3:30pm
+Drop dead date | 18 March 2026 at 3:30pm
 
 Remember!  You must have committed something by the drop-dead date!  *You must
 attempt every project*.
@@ -404,11 +404,6 @@ The goal of this project is to get some practice with assertions, primarily
 concurrent assertions.  You might find yourself writing some very small number of
 immediate assertions for particular situations.  Really, just one or two immediate
 assertions.  Overall, you should mostly be writing the concurrent type of assertions.
-
-## 341 Linter
-
-Your repo will include the 341 "Linter" that will show up on git commits as "Slang/Tidy,"  just like in the NOC project.  We hope it is useful to you.  We will not
-be using the linter output for grading.
 
 ## For Credit
 
