@@ -1,31 +1,16 @@
 Assertions Project
 
-18-341: Spring Semester of 2026
+18-341: Fall Semester of 2026
 
 ## Objective and Overview
 
-The purpose of this project is to get you thinking about testbenches and
-concurrent assertions.  You will do so in simulation (of course) by writing a
-testbench to test some IP that I give you.  Validation engineering, here you
-come!
+The purpose of this project is to get you thinking about testbenches and concurrent assertions.  You will do so in simulation (of course) by writing a testbench to test some IP that I give you.  Validation engineering, here you come!
 
-One day in a steam tunnel inside Hamerschlag Hall, some guy is trying to sell
-you IP for a calculator, written in SystemVerilog.  Worse, it’s encrypted
-because he doesn’t want to give away how it works.  Knowing there’s no free
-lunch, only free pizza on ECE day, you are skeptical.  Your goal is to write
-testbench code, with properties and concurrent assertions, to check if the
-design is correct.
+One day in a steam tunnel inside Hamerschlag Hall, some guy is trying to sell you IP for a calculator, written in SystemVerilog.  Worse, it’s encrypted because he doesn’t want to give away how it works.  Knowing there’s no free lunch, only free pizza on ECE day, you are skeptical.  Your goal is to write testbench code, with properties and concurrent assertions, to check if the design is correct.
 
-The calculator uses reverse polish notation (RPN), similar to early 
-calculators (the ones with the enter button).  The basic idea in RPN
-is that two values are sent followed by the command to perform on them (say,
-add).  In reality, the strings of values and commands can be longer as this is
-all implemented with a stack.  For instance, if you enter three values (a, b,
-c) followed by +, -, then the calculation would be a-(b+c).
+The calculator uses reverse polish notation (RPN), similar to early calculators (the ones with the enter button).  The basic idea in RPN is that two values are sent followed by the command to perform on them (say, add).  In reality, the strings of values and commands can be longer as this is all implemented with a stack.  For instance, if you enter three values (a, b, c) followed by +, -, then the calculation would be a-(b+c).
 
-But your job isn’t to design a calculator. Rather it’s to take someone else’s
-design and determine if it’s good enough to buy. Details of the calculator are
-presented later. 
+But your job isn’t to design a calculator. Rather it’s to take someone else’s design and determine if it’s good enough to buy. Details of the calculator are presented later.
 
 This is an **individual** project.
 
@@ -33,12 +18,11 @@ This is an **individual** project.
 
 Project value | 90 points
 --- | ---
-Project start | 26 February 2026
-Project due | 17 March 2026 at 3:30pm
-Drop dead date | 18 March 2026 at 3:30pm
+Project start | 7 October 2026
+Project due | 26 October 2026 at 3:30pm
+Drop dead date | 27 October 2026 at 3:30pm
 
-Remember!  You must have committed something by the drop-dead date!  *You must
-attempt every project*.
+Remember!  You must have committed something by the drop-dead date!  *You must attempt every project*.
 
 ## A Note about Collaboration
 
@@ -341,9 +325,7 @@ property (xyzzy) @(posedge clock)
 endproperty
 ```
 
-* Don't forget that assertions are invariants about a design.  You
-should not have a variable that turns off an assertion based on what
-phase the testbench is in. e.g., like 
+* Don't forget that assertions are invariants about a design.  You should not have a variable that turns off an assertion based on what phase the testbench is in. e.g., like 
 
 ```systemverilog
 property (konami) @(posedge clock) 
@@ -354,21 +336,15 @@ property (konami) @(posedge clock)
 
 In the repo, you will find the following files:
 
-* **top.sv** — This file is the one shown above. Copy it to your working
-  directory and add to it. 
+* **top.sv** — This file is the one shown above. Copy it to your working   directory and add to it. 
 
-* **TA\_calc\_broken.sve** — The broken calculator. It will call your 
-  **runTestbench** task. 
+* **TA\_calc\_broken.sve** — The broken calculator. It will call your   **runTestbench** task. 
 
-* **TA\_calc\_golden.svp** — The calculator with no faults. It will call your 
-  **runTestbench** task. 
+* **TA\_calc\_golden.svp** — The calculator with no faults. It will call your   **runTestbench** task. 
 
-* **Makefile** — A makefile that can be used to build the system with
-either the broken calculator or the golden calculator. We provided a
-starter makefile in the handout area — start with it. 
+* **Makefile** — A makefile that can be used to build the system with either the broken calculator or the golden calculator. We provided a starter makefile in the handout area — start with it. 
 
-If you change anything in the makefile, make sure we can still run the 
-system with the following commands: 
+If you change anything in the makefile, make sure we can still run the system with the following commands: 
 
 ```bash
 make broken
@@ -379,8 +355,7 @@ make golden
 ```
 ## NO GOLDEN MODELS + some tips
 
-Most of this section was written by a TA in a previous semester (thanks, Nicole!).
-I suspect it will be useful for you.
+Most of this section was written by a TA in a previous semester (thanks, Nicole!). I suspect it will be useful for you.
 
 **Please do NOT write a golden model for p4.**
 
@@ -400,41 +375,24 @@ In general, the goal is to write a suite of test vectors designed to induce ever
 
 Not every test needs to check for every type of error! You can write targeted test vectors designed to check for and catch specific errors, with the hope that you write a diverse enough set of test vectors that when run all together, will be able to catch all the possible faults/bugs you listed in your fault model. In fact, this is probably a more beneficial approach to use since it'll be easier for you to pinpoint what exact errors are happening and where. What do I mean by "targeted" test vectors? Probably don't randomize everything (be thoughtful about what values might trigger/induce errors).
 
-The goal of this project is to get some practice with assertions, primarily 
-concurrent assertions.  You might find yourself writing some very small number of
-immediate assertions for particular situations.  Really, just one or two immediate
-assertions.  Overall, you should mostly be writing the concurrent type of assertions.
+The goal of this project is to get some practice with assertions, primarily concurrent assertions.  You might find yourself writing some very small number of immediate assertions for particular situations.  Really, just one or two immediate assertions.  Overall, you should mostly be writing the concurrent type of assertions.
 
 ## For Credit
 
-Submit your SystemVerilog modules “appropriately” written.  e.g., clean
-writing style and correct use of SV language semantics.  Concurrent
-assertions!  Lots of concurrent assertions!  Comments!
+Submit your SystemVerilog modules “appropriately” written.  e.g., clean writing style and correct use of SV language semantics.  Concurrent assertions!  Lots of concurrent assertions!  Comments!
 
-Of course, submission is done by tagging (yes, using a git tag) some 
-commit with 'Final'.
+Of course, submission is done by tagging (yes, using a git tag) some commit with 'Final'.
 
-Turn in a report describing your fault model.  What could go wrong? 
-Explain how your testbench properties and assertions test for these
-faults.
+Turn in a report describing your fault model.  What could go wrong?  Explain how your testbench properties and assertions test for these faults.
 
-Include in the report a table with a row for each phase to summarize
-what you've found.  Explain or speculate on what is wrong in each phase.
+Include in the report a table with a row for each phase to summarize what you've found.  Explain or speculate on what is wrong in each phase.
 
-Schedule a demonstration with the TAs.  We will watch your demo and
-question you about your code and assertions.  We will run this with the
-broken calculator provided.
+Schedule a demonstration with the TAs.  We will watch your demo and question you about your code and assertions.  We will run this with the broken calculator provided.
 
-We will then add another fault or two to see if you can find it and
-explain it from your testbench output.  After all, that's what
-verification engineering is all about.
+We will then add another fault or two to see if you can find it and explain it from your testbench output.  After all, that's what verification engineering is all about.
 
 ## Demos and Lateness
 
-Same as in previous projects, you will demo outside of class times on or
-near the due date.
+Same as in previous projects, you will demo outside of class times on or near the due date.
 
-* **Grace Day:**  You may use your grace day to turn in the solution up
-to 24 hours late.  If you do not intend to use a grace day (or have
-already used yours), make sure you have _something_ committed and pushed
-at the deadline to avoid getting a zero on this project.
+* **Grace Day:**  You may use your grace day to turn in the solution up to 24 hours late.  If you do not intend to use a grace day (or have already used yours), make sure you have _something_ committed and pushed at the deadline to avoid getting a zero on this project.
