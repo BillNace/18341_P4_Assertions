@@ -313,6 +313,8 @@ code. They come under the phrase “appropriately written.”
 Things not to do: 
 * Don’t use SystemVerilog **program** constructs. We won’t either. 
 * Don’t call **$finish**, we will. 
+* Don't use **$past**, **$sampled**, **$rose**, **$fell**, **stable**, or **$changed**.  
+We will learn about those later in the semester.  Use local variables instead.
 * Don’t design your own RT level calculator to test against ours —
 you’ll lose lots of points for that.  You may have some software-ish
 code that keeps track of what values should appear, but that’s about it.
@@ -325,7 +327,9 @@ property (xyzzy) @(posedge clock)
 endproperty
 ```
 
-* Don't forget that assertions are invariants about a design.  You should not have a variable that turns off an assertion based on what phase the testbench is in. e.g., like 
+* Don't forget that assertions are invariants about a design.  You should 
+  not have a variable that turns off an assertion based on what phase the
+  testbench is in. e.g., like 
 
 ```systemverilog
 property (konami) @(posedge clock) 
